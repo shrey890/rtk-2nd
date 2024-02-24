@@ -1,7 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import  showData  from "../features/showSlice";
-export const store  =configureStore({
-    reducer:{  
-        show:showData
-     },
+import userSlice from "../features/userSlice";
+
+export const store = configureStore({
+reducer:{
+    user:userSlice
+}
 })
